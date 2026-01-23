@@ -1,0 +1,68 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/**
+* ? navbar style
+* !25 for top bottom 60 for left right
+**/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+    
+}
+
+.cart {
+    background-color: aliceblue;
+    position: relative;
+    color: #212529;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    /* height: 40px; */
+}
+
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+
+}
+
+
+/**
+*!shop item style are here
+**/
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 25px;
+    justify-content: center;
+    
+}
+
+
+.item {
+    border: 2px solid #212529;
+    border-radius: 4px;
+    
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    
+}
