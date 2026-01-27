@@ -154,10 +154,10 @@ let shopItemsData = [
   },
 ];
 
-// 🧺 Cart state
+// Cart state
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
-// 🏪 Generate shop UI
+// Generate shop UI
 let generateShop = () => {
   shop.innerHTML = shopItemsData
     .map((item) => {
@@ -187,7 +187,7 @@ let generateShop = () => {
 
 generateShop();
 
-// ➕ Increment
+// Increment
 let increment = (id) => {
   let search = basket.find((x) => x.id === id);
 
@@ -197,11 +197,12 @@ let increment = (id) => {
     search.item += 1;
   }
 
-  localStorage.setItem("data", JSON.stringify(basket));
   update(id);
+
+  localStorage.setItem("data", JSON.stringify(basket));
 };
 
-// ➖ Decrement
+//Decrement
 // let decrement = (id) => {
 //   let search = basket.find((x) => x.id === id);
 //   if (!search) return;
@@ -228,8 +229,13 @@ let decrement = (id) => {
     search.item -= 1;
   }
 
-  localStorage.setItem("data", JSON.stringify(basket));
+  // remove if item = 0 from basket from local storage save space:
+ 
+
   update(id);
+ basket = basket.filter((x) => x.item !== 0)
+  localStorage.setItem("data", JSON.stringify(basket));
+ 
 };
 
 // 🔄 Update UI
