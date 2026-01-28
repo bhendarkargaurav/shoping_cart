@@ -8,6 +8,11 @@ i {
     cursor: pointer;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /**
 * ? navbar style
@@ -104,4 +109,97 @@ color: red;
 
 .bi-plus-lg{
     color: green;
+}
+
+
+/**
+*! style rules for label and some buttons
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.HomeBtn{
+    background-color:#212529;
+    color:white ;
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+/**
+*! style rules for shopping cart
+**/
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/**
+*! style rules for cart item
+**/
+
+.cart-item{
+    border-radius: 5px;
+    border: 2px solid #212529;
+    display: flex;
+}
+
+.titlt-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-pricev{
+    padding: 3px 6px;
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+}
+
+
+.checkout{
+    background-color:#1c9b18;
+    color:white ;
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.removeAll{
+    background-color:#e73434;
+    color:white ;
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
 }
