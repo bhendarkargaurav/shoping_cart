@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    /* background-color: #f6f7f9; */
 }
 
 i {
@@ -22,6 +23,7 @@ a{
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #212529;
     color: white;
     padding: 25px 60px;
@@ -60,7 +62,7 @@ a{
     grid-template-columns: repeat(4, 223px);
     gap: 25px;
     justify-content: center;
-    
+    margin-bottom: 20px;
 }
 
 
@@ -80,6 +82,11 @@ a{
     border: 2px solid #212529;
     border-radius: 4px;
     
+}
+
+.item img {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
 }
 
 .details {

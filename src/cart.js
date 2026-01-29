@@ -120,6 +120,14 @@ let removeItem = (id) => {
 }
 
 
+let clearCart = () => {
+    basket = [];
+    generateCartItems();
+     calculation();
+    //update the local storage
+    localStorage.setItem("data", JSON.stringify(basket));
+}
+
 
 let TotalAmount = () => {
     if(basket.length !==0) {
@@ -132,7 +140,7 @@ let TotalAmount = () => {
         label.innerHTML = `
             <h2>Total Bill :$ ${amount}</h2>
             <button class="checkout"> Checkout </button>
-            <button class="removeAll"> Clear Cart</button>
+            <button onclick="clearCart()" class="removeAll"> Clear Cart</button>
         `
     } else return;
 }
