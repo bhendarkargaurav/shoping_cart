@@ -1,0 +1,40 @@
+
+
+
+.dellicon p{
+
+    color: #006BBD;
+    font-size: 1.4em;
+
+}
+.dellicon p span{
+font-weight:900 ;
+
+}
+
+.navbar{
+display: flex;
+
+justify-content: space-between;
+}
+.contact{
+    display: flex;
+    
+}
+
+.contact div{
+    padding: 1.5em;
+}
+
+
+.searchbar{
+padding-top: 0.5em;
+
+border: 1px solid black;
+
+}
+
+
+.contact div i{
+    padding: .5em;
+}

@@ -1,0 +1,23 @@
+.background{
+    
+    background-image: url("/payment_form/img.jpg");
+    height: 1600px;
+    width: 1000px;
+    background-size: 100;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+h1.rem{
+    /* font-size: 1vmax; */
+    font-size: 5rem;
+    /* font-size: 8em; */
+    /* font-size: 50px; */
+    font-style: oblique;
+    font-display: 12px;
+    font-variant: small-caps;
+    -webkit-font-feature-settings: "tnum";
+}
+p.em{
+    color: rgb(0, 0, 0);
+    em
+}

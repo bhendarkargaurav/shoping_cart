@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        .A1{
+            background-color: aliceblue;
+            
+            width: 170em;
+            border: 0.3em ;
+       
+
+        }
+        li,a{
+            color: rgb(248, 45, 45);
+        }
+        h2,li{
+            margin-left: 2em;
+        }
+        .A2{
+             margin-left: em;
+             float: right;
+        }
+        .container{
+            text-decoration: none;
+            display: flex;
+            /* display: block; */
+            background-color: aliceblue;
+            margin-left: 3em;
+            width: 55em;
+            border: 0.3em ;
+        }
+        /*  */
+        @media  all and(min-width:800px){
+            .A1 li a:after{
+                content: "("attr(data-email)")";
+                font-size: 11px;
+                color: blue;
+            }}
+            
+        @media screen and(max-width:540px) {
+             .A2 .container {
+                display: block;
+            }
+            
+        }    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="A1">
+        <h2>Team Apna College:</h2>
+        <li> <a data-email="dhattrawalaman97@gmail.com" href="mailto:dhattrawalaman97@gmail.com"> Aman Dhattrawal</a></li>
+        <li> <a data-email="kumarrahul123@gmail.com" href="mailto:kumarrahul123@gmail.com"> Rahul Kumar</a></li>
+        <li> <a data-email="neharahul@me,com" href="mailto:neharahul@me,com" > Neha Sharma</a></li>
+       
+    </div>
+      <div class="A2">
+        <p  >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+          harum vero? Cupiditate quasi natus quos. Mollitia debitis eius
+          repudiandae ipsam deleniti fugiat placeat laboriosam iusto obcaecati,
+          magnam nesciunt impedit labore voluptatum quidem esse totam magni
+          molestiae quasi reprehenderit expedita consequuntur delectus! Nemo
+          quas quo, beatae praesentium voluptatibus quia inventore impedit
+          corrupti ex, perferendis architecto autem nisi totam repudiandae
+          adipisci quod laborum debitis dignissimos dolorum placeat doloremque
+          quis, nihil id. Ipsa!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+          nostrum asperiores facere temporibus accusantium quasi fugiat?
+          Repellat non, sit quaerat neque in fuga ea facilis officia, illum
+          exercitationem nam harum alias nobis necessitatibus magni! Distinctio
+          veniam libero, velit molestias asperiores vel architecto esse aperiam!
+          Accusamus repudiandae doloribus voluptas error ex.
+        </p>
+    </div>
+      
+    </div>
+  </body>
+</html>

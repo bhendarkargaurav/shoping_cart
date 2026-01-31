@@ -1,0 +1,48 @@
+
+.boxes2{
+    margin-left: 65px;
+    background-color: rgb(228, 225, 218);
+    border:2px solid rgb(57, 57, 57);
+    border-radius: 6px;
+    height: 300px;
+    width: 380px;
+    background-image: none;
+}
+
+
+.first{
+    width: 370px;
+    height: 180px;
+    
+    border-radius: 12px;
+   
+}
+
+.B{
+    color: rgb(34, 6, 248);
+    /* text-align: center; */
+    /* padding-bottom: 20px; */
+    font-size: 1.5em;
+    font-weight: 900;
+    /* margin-left: 10px; */
+    padding-left: 20px
+    
+
+}
+.BB{
+    color: rgb(144, 141, 137);
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+.main{
+    background-color: rgb(4, 61, 247);
+    color: rgb(255, 255, 255);
+    height: 25px;
+    width: 110px;
+text-align: center;
+margin-left: 270px;
+}
+.main1{
+    margin-top: 2px;
+}

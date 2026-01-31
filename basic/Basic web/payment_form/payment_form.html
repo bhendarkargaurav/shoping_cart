@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1 style="color: rgb(0, 0, 0);"  class="main_heading">Payment Form</h1>
+    <p>Required fieled are followed by *</p>
+    <h2 >Contact Information</h2>
+    <p>Name*: <input type="text" name="name" required/></p>
+    <fieldset>
+      <legend>gender*</legend>
+      <p>
+        male <input type="radio" name="gender" id="male" required />female
+        <input type="radio" name="gender" id="female" required/>
+      </p>
+    </fieldset>
+    <p>Address:</p>
+    <br />
+    <textarea name="address" id="address" cols="50" rows="7"></textarea>
+    <p>Email*: <input type="email" name="email" id="email" required/></p>
+    <p>pincode*: <input type="number" name="pincode" id="pincode" required /></p>
+
+    <h2 class="payment">Payment Information</h2>
+    <p>
+      Card Types*:
+      <select name="card type" id="card type">
+        <option value="">--select the card--</option>
+        <option value="visa">visa</option>
+        <option value="rupay">rupay</option>
+        <option value="mastercard">mastercard</option>
+      </select>
+    </p>
+    <p>
+      Card Number*:
+        <input type="number" name="card_number" id="card_number" required>
+    </p>
+    <p>
+        expiry date*:
+        <input type="date" name="expiry_date" id="expiry_date"required>
+    </p>
+    <p>CVV*:
+        <input type="password" name="CVV" id="CVV"required><br>
+        <input type="submit" value="Pay Now">
+    </p>
+    <hr>
+    <h1> <u> Hello Gaurav</u></h1>
+    <h2>Why you are learning Web Disigning</h2>
+    <p>Lorem  ipsum dolor sit amet <span class="special"> Gaurav Bhendarkar </span>adipisicing elit. Voluptates asperiores, rerum magni sunt voluptatum aperiam.</p>
+    <p>Lorem ipsum dolor sit <em cculass="special"> Pritam kore </em>adipisicing elit..</p>
+    <a href="><b>link</b></a>
+    <p id="Dharmapuri">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, facilis.</p>
+    <ul>
+      <li class="special">Gaurav</li>
+      <li>Pritam</li>
+      <li class="special">Chaitanya</li>
+      <li> <em>Chetan</em> dada</li>
+    </ul>
+    <!-- att ribute style -->
+    <ul>
+      <li>Mummy</li>
+      <li class="a">Papa</li>
+      <li class="a b">Kaka</li>
+      <li class="ab">kaku</li>
+      <li>Have a happy life</li>
+    </ul>
+    <hr>
+      
+    
+  </div>
+  </body>
+</html>

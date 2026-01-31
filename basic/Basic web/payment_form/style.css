@@ -1,0 +1,98 @@
+
+ li.special{
+    color: blue;
+   font-style: italic;
+   font-weight: bold;
+}
+/* li em used to select all the em under li tag */
+li em{
+    color: red;
+}
+/* h2+p mence it used to select the element just after the h2 tag */
+h2+p{
+    font-size: largh1{
+    color: rgb(0, 255, 51);
+}
+p{
+    color: rgb(13, 10, 5);
+}
+
+span.special,
+em.special{
+    color: red;
+}er;
+}
+/* pseudo class selective */
+a:hover{
+    color: red;
+}
+p#Dharmapuri{
+    
+    background-color: rgb(250, 238, 219);
+    color: blue;
+}
+/* attribute */
+li[class~="a"]{
+    color: blue;
+}
+/* universal */
+*{
+    list-style-type: none;
+} 
+
+
+/* css for payment form */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+.container{
+    background-color: #e2dede;
+    padding: 5px 20px 15px 20px ;
+    border: 1px solid rgb(169, 18, 18);
+    border-radius: 4px;
+    margin: 20px;
+    
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+
+select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px;
+    border-color: rgb(227, 10, 10);
+    border-radius: 5px;
+    margin: 10px;
+}
+fieldset{
+    background-color: #fff;
+    border: 1px solid rgb(155, 152, 152);
+
+}
+.main_heading{
+    text-align: center;
+    background-color: rgb(241, 236, 235);
+}
+input[ type="submit"]{
+    background-color: #0a0d0a;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+}
+.payment{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(47, 247, 51);
+}
