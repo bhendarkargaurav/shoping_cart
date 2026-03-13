@@ -12,7 +12,7 @@ input.addEventListener("keypress", function(e){
 
 function addTodo(){
 
-    const task = input.value;
+    const task = input.value.trim();
 
     if(task === ""){
         alert("please enter a task");
@@ -49,11 +49,25 @@ list.addEventListener("click", function(e){
 });
 
 function saveTasks(){
-    localStorage.setItem("todos", list.innerHTML);
+    const tasks = [...list.querySelectorAll("li")].map(li => ({
+        text: li.firstChild.textContent.trim(),
+        completed: li.classList.contains("completed")
+    }));
+    localStorage.setItem("todos", JSON.stringify(tasks));
 }
 
 function loadTasks(){
-    list.innerHTML = localStorage.getItem("todos") || "";
+    const tasks = JSON.parse(localStorage.getItem("todos") || "[]");
+    tasks.forEach(task => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            ${task.text}
+            <button class="complete">✔</button>
+            <button class="delete">❌</button>
+        `;
+        if(task.completed) li.classList.add("completed");
+        list.appendChild(li);
+    });
 }
 
 loadTasks();
