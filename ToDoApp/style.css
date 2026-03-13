@@ -38,7 +38,7 @@ button {
 
 .completed {
     text-decoration: line-through;
-    color: gray;
+    color: rgb(58, 57, 57);
 }
 
 
