@@ -8,7 +8,7 @@ const apiKey = "384e7a34622e1045cdccf06917912946";
 
 button.addEventListener("click", getWeather);
 
-console.log("kbicba", input);
+// console.log("kbicba", input);
 
 input.addEventListener("keypress", function(e){
     if(e.key === "Enter"){  //e.key tells which key was pressed.
