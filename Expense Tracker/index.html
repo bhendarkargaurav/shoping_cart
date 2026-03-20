@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="dashbord">
+
     <h2>Balance: ₹<span id="balance">0</span> </h2>
-    
+    <h3>Income: ₹<span id="income">0</span></h3>
+    <h3>Expense: ₹<span id="expense">0</span></h3>
+
+    <div class="filter">
+    <button onclick="setFilter('all')">All</button>
+    <button onclick="setFilter('income')">Income</button>
+    <button onclick="setFilter('expense')">Expense</button>
+    </div>
+
+    </div>
+
     <input type="text" id="text" placeholder="Enter description">
     <input type="text" id="amount" placeholder="Enter amount (+income, -expense)">
     <button onclick="addTransaction()">Add</button>
 
     <ul id="list"></ul>
+
+    
     
 </body>
 <script src="script.js"></script>
