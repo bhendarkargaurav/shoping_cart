@@ -1,6 +1,6 @@
-let notes = [];
+let notes = [];   //notes = []
 
-// ad note
+// add note
 function addNote() {
     const title = document.getElementById("title").value;
     const description = document.getElementById("description").value;
